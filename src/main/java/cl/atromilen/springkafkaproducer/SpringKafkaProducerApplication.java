@@ -1,13 +1,13 @@
-package cl.atromilen.springkafkaconsumer;
+package cl.atromilen.springkafkaproducer;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringKafkaConsumerApplication {
+public class SpringKafkaProducerApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringKafkaConsumerApplication.class, args);
+		SpringApplication.run(SpringKafkaProducerApplication.class, args);
 	}
 
 }

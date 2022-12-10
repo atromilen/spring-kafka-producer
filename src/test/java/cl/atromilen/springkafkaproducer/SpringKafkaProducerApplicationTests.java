@@ -1,10 +1,10 @@
-package cl.atromilen.springkafkaconsumer;
+package cl.atromilen.springkafkaproducer;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SpringKafkaConsumerApplicationTests {
+class SpringKafkaProducerApplicationTests {
 
 	@Test
 	void contextLoads() {
