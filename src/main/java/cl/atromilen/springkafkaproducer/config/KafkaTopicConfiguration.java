@@ -1,4 +1,4 @@
-package cl.atromilen.springkafkaconsumer.config;
+package cl.atromilen.springkafkaproducer.config;
 
 import org.apache.kafka.clients.admin.AdminClientConfig;
 import org.apache.kafka.clients.admin.NewTopic;

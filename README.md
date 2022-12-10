@@ -1,5 +1,5 @@
-# spring-kafka-consumer
-> Kafka consumer using Spring boot and Spring-kafka dependency.
+# spring-kafka-producer
+> Kafka producer using Spring boot and Spring-kafka dependency.
 > 
 > _Coded by [atromilen](https://github.com/atromilen)_
 
@@ -17,8 +17,13 @@ a Listener container. Features and documentation can be found [here](https://spr
 
 **Docker compose**
 
-The project is based on docker-compose to starts the infrastructure needed by this project. Docker compose is managing
-Zookeeper and Kafka services.
+The project is based on docker-compose to start the infrastructure required by this project. The services for this 
+project managed by docker compose are: 
+- [Zookeeper](https://zookeeper.apache.org/)
+- [Kafka](https://www.confluent.io/what-is-apache-kafka/?utm_medium=sem&utm_source=google&utm_campaign=ch.sem_br.brand_tp.prs_tgt.confluent-brand_mt.xct_rgn.latam_lng.eng_dv.all_con.confluent-kafka-general&utm_term=confluent%20kafka&creative=&device=c&placement=&gclid=CjwKCAiA-dCcBhBQEiwAeWidtRN_W79Qa5fTtZF73BZqBUuyFk3cFhtr9Dswl0rOsoPgPGU6czD52BoCsGMQAvD_BwE)
+- [AKHQ](https://akhq.io/)
+- [Schema Registry](https://developer.confluent.io/learn-kafka/apache-kafka/schema-registry/)
+- [Kafka Connect](https://developer.confluent.io/learn-kafka/apache-kafka/kafka-connect/)
 
 **Makefile**
 
@@ -73,3 +78,7 @@ stop and clean.
 Added the feature for the initial topic creation when the application starts, setting the Spring beans required and
 adding the config in **application.yml** for boostrap-servers, topic name, number of partitions and replicas.<br/>
 By other hand, port 29092 of kafka service is now exposed to listening from localhost (required for the application).
+
+### [Fix: change in project description](https://github.com/atromilen/spring-kafka-producer/pull/3/files)
+Changed project description to **producer** instad of consumer. Added in README, detail of docker services managed by 
+docker-compose.
