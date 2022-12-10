@@ -1,0 +1,6 @@
+spring:
+    kafka:
+      bootstrap-servers: localhost:29092
+      topic-name: messages-for-emailing
+      topic-partitions: 1
+      topic-replicas: 1
