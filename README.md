@@ -68,3 +68,8 @@ Consider that the make stop also will stop the container services.
 ### [Initial Commit](https://github.com/atromilen/spring-kafka-consumer/commit/255574afda957476f042289ac770ffaf144530ef)
 Added docker-compose services definitions, gradle dependencies and makefile to automate application tasks such as build, start,
 stop and clean.
+
+### [Programmatic topic creation](https://github.com/atromilen/spring-kafka-consumer/pull/2)
+Added the feature for the initial topic creation when the application starts, setting the Spring beans required and
+adding the config in **application.yml** for boostrap-servers, topic name, number of partitions and replicas.<br/>
+By other hand, port 29092 of kafka service is now exposed to listening from localhost (required for the application).
