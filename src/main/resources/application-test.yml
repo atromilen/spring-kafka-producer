@@ -1,8 +1,6 @@
 spring:
     kafka:
       bootstrap-servers: localhost:29092
-      topic-name: messages-for-emailing
+      topic-name: embedded-test-topic
       topic-partitions: 1
       topic-replicas: 1
-server:
-  port: 8081

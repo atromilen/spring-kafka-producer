@@ -82,3 +82,11 @@ By other hand, port 29092 of kafka service is now exposed to listening from loca
 ### [Fix: change in project description](https://github.com/atromilen/spring-kafka-producer/pull/3/files)
 Changed project description to **producer** instad of consumer. Added in README, detail of docker services managed by 
 docker-compose.
+
+### [Kafka Producer implementation](https://github.com/atromilen/spring-kafka-producer/pull/4)
+- Implementation of the Controller to receive messages to be sent to Kafka via the Service class
+- Integrated test for service layer. <br/>
+- Properties handling was encapsulated into the new class **ConfigProperties**, in order to inject it when it will be 
+necessary. <br/>
+- Added test profile to separate properties for embedded kafka broker in test scope. <br/>
+- Improved the documentation about the kafka properties specified in application.yml adding a new **MANIFEST-INFO** json file.
