@@ -3,27 +3,22 @@ package cl.atromilen.springkafkaproducer.service;
 import cl.atromilen.springkafkaproducer.config.ConfigProperties;
 import cl.atromilen.springkafkaproducer.event.Event;
 import cl.atromilen.springkafkaproducer.event.MessageForEmailing;
+import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.kafka.support.SendResult;
 import org.springframework.stereotype.Service;
 
-import java.time.Instant;
 import java.util.UUID;
 
 @Service
+@RequiredArgsConstructor
 public class KafkaProducerService {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(KafkaProducerService.class);
-
     private final KafkaTemplate<String, Event<?>> kafkaTemplate;
     private final ConfigProperties properties;
-
-    public KafkaProducerService(KafkaTemplate<String, Event<?>> kafkaTemplate, ConfigProperties properties) {
-        this.kafkaTemplate = kafkaTemplate;
-        this.properties = properties;
-    }
 
     public void send(MessageForEmailing message) throws RuntimeException{
         Event<MessageForEmailing> event = new Event<>();

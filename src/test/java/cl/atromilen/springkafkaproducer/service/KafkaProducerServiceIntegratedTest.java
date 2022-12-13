@@ -1,7 +1,6 @@
-package cl.atromilen.springkafkaproducer.integratedtests;
+package cl.atromilen.springkafkaproducer.service;
 
 import cl.atromilen.springkafkaproducer.event.MessageForEmailing;
-import cl.atromilen.springkafkaproducer.service.KafkaProducerService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -15,7 +14,7 @@ import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 @DirtiesContext
 @EmbeddedKafka(partitions = 1, brokerProperties = {"listeners=PLAINTEXT://localhost:29092", "port:29092"})
 @ActiveProfiles("test")
-class KafkaProducerServiceTest {
+class KafkaProducerServiceIntegratedTest {
 
     @Autowired
     private KafkaProducerService producer;

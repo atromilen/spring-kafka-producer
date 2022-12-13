@@ -90,3 +90,9 @@ docker-compose.
 necessary. <br/>
 - Added test profile to separate properties for embedded kafka broker in test scope. <br/>
 - Improved the documentation about the kafka properties specified in application.yml adding a new **MANIFEST-INFO** json file.
+
+### [Validations and Improvements](https://github.com/atromilen/spring-kafka-producer/pull/5)
+In this commit was added validation for the REST API payload, a controller advice to handle validations and the
+Unit Test to check REST API responses with status 400 in validation errors and status 201 in success.<br/>
+Some syntactic sugar was added: replaced params constructor by **lombok decorator @RequiredArgsConstructor** in controller, 
+service and config beans.
