@@ -1,6 +1,6 @@
-package cl.atromilen.springkafkaproducer.service;
+package cl.atromilen.spring.kafka.producer.service;
 
-import cl.atromilen.springkafkaproducer.event.MessageForEmailing;
+import cl.atromilen.spring.kafka.producer.event.MessageForEmailing;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -20,8 +20,7 @@ class KafkaProducerServiceIntegratedTest {
     private KafkaProducerService producer;
 
     @Test
-    void whenAMessageIsProducedWithSuccess_inKafkaProducerService_thenProcessFinishNormally() throws InterruptedException {
-        var messageToSend = getMessageForEmailing();
+    void whenAMessageIsProducedWithSuccess_inKafkaProducerService_thenProcessFinishNormally() {
         assertDoesNotThrow(() -> producer.send(getMessageForEmailing()));
     }
 

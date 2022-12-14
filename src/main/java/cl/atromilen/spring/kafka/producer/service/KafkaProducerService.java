@@ -1,8 +1,8 @@
-package cl.atromilen.springkafkaproducer.service;
+package cl.atromilen.spring.kafka.producer.service;
 
-import cl.atromilen.springkafkaproducer.config.ConfigProperties;
-import cl.atromilen.springkafkaproducer.event.Event;
-import cl.atromilen.springkafkaproducer.event.MessageForEmailing;
+import cl.atromilen.spring.kafka.producer.config.ConfigProperties;
+import cl.atromilen.spring.kafka.producer.event.MessageForEmailing;
+import cl.atromilen.spring.kafka.producer.event.Event;
 import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

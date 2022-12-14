@@ -1,17 +1,17 @@
 {
   "properties": [
     {
-    "name": "spring.kafka.topic-name",
+    "name": "spring.kafka.producer.topic-name",
     "type": "java.lang.String",
     "description": "(Custom property) Name for topic to create when app starts to running."
     },
     {
-      "name": "spring.kafka.topic-partitions",
+      "name": "spring.kafka.producer.topic-partitions",
       "type": "java.lang.String",
       "description": "(Custom property) Number of partitions to set for this topic."
     },
     {
-      "name": "spring.kafka.topic-replicas",
+      "name": "spring.kafka.producer.topic-replicas",
       "type": "java.lang.String",
       "description": "(Custom property) Number of replicas to set for this topic."
     }

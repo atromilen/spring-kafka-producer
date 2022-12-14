@@ -1,4 +1,4 @@
-package cl.atromilen.springkafkaproducer.utils;
+package cl.atromilen.spring.kafka.producer.utils;
 
 public class Utils {
 

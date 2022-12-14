@@ -1,4 +1,4 @@
-package cl.atromilen.springkafkaproducer.event;
+package cl.atromilen.spring.kafka.producer.event;
 
 import lombok.Data;
 

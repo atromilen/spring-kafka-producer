@@ -1,4 +1,4 @@
-package cl.atromilen.springkafkaproducer.config;
+package cl.atromilen.spring.kafka.producer.config;
 
 import lombok.RequiredArgsConstructor;
 import org.apache.kafka.clients.admin.AdminClientConfig;

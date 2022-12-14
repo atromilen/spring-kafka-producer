@@ -1,6 +1,6 @@
-package cl.atromilen.springkafkaproducer.config;
+package cl.atromilen.spring.kafka.producer.config;
 
-import cl.atromilen.springkafkaproducer.event.Event;
+import cl.atromilen.spring.kafka.producer.event.Event;
 import lombok.RequiredArgsConstructor;
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.common.serialization.StringSerializer;
@@ -25,7 +25,9 @@ public class KafkaProducerConfig {
                 Map.of(
                         ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, configProperties.getBootstrapServers(),
                         ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class,
-                        ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, JsonSerializer.class
+                        ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, JsonSerializer.class,
+                        //Prop required both in producer and consumer (same alias "event" but point corresponding class)
+                        JsonSerializer.TYPE_MAPPINGS, "event:cl.atromilen.spring.kafka.producer.event.Event"
                 )
         );
     }
