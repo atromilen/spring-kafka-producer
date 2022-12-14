@@ -1,8 +1,8 @@
-package cl.atromilen.springkafkaproducer.controlleradvice;
+package cl.atromilen.spring.kafka.producer.controlleradvice;
 
-import cl.atromilen.springkafkaproducer.controlleradvice.errors.ErrorMessage;
-import cl.atromilen.springkafkaproducer.controlleradvice.errors.FieldWithError;
-import cl.atromilen.springkafkaproducer.utils.Utils;
+import cl.atromilen.spring.kafka.producer.controlleradvice.errors.ErrorMessage;
+import cl.atromilen.spring.kafka.producer.controlleradvice.errors.FieldWithError;
+import cl.atromilen.spring.kafka.producer.utils.Utils;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.FieldError;

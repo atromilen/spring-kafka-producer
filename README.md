@@ -96,3 +96,8 @@ In this commit was added validation for the REST API payload, a controller advic
 Unit Test to check REST API responses with status 400 in validation errors and status 201 in success.<br/>
 Some syntactic sugar was added: replaced params constructor by **lombok decorator @RequiredArgsConstructor** in controller, 
 service and config beans.
+
+### [Type mappings and refactoring](https://github.com/atromilen/spring-kafka-producer/pull/6)
+- Added type_mappings to producer properties, to correspond alias "event" in the consumer configuration
+- Packages renamed in order to give more readability
+- Added 1 more deep level (added producer) into application properties. Also modified META_INF file.

@@ -1,7 +1,7 @@
-package cl.atromilen.springkafkaproducer.controller;
+package cl.atromilen.spring.kafka.producer.controller;
 
-import cl.atromilen.springkafkaproducer.event.MessageForEmailing;
-import cl.atromilen.springkafkaproducer.service.KafkaProducerService;
+import cl.atromilen.spring.kafka.producer.event.MessageForEmailing;
+import cl.atromilen.spring.kafka.producer.service.KafkaProducerService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;

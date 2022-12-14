@@ -1,4 +1,4 @@
-package cl.atromilen.springkafkaproducer.controlleradvice.errors;
+package cl.atromilen.spring.kafka.producer.controlleradvice.errors;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

@@ -1,4 +1,4 @@
-package cl.atromilen.springkafkaproducer.controlleradvice.errors;
+package cl.atromilen.spring.kafka.producer.controlleradvice.errors;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.PropertyNamingStrategies;
